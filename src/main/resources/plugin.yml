@@ -1,0 +1,10 @@
+name: Camouflage
+main: xyz.sorridi.camouflage.Camouflage
+author: Sorridi
+version: '${project.version}'
+depend: [ FarmPVP, ProtocolLib, NBTAPI ]
+website: https://sorridi.xyz/plugins/camouflage
+commands:
+  camouflage:
+    description: "Camouflage command"
+    aliases: [ camo ]

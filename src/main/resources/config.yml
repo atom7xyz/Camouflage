@@ -1,0 +1,50 @@
+#
+# Spiegazione del config: https://sorridi.xyz/plugins/camouflage
+#
+
+permissions:
+  RELOAD: "camouflage.edit"
+  BYPASS_CHECKS: "camouflage.bypass"
+
+messages:
+  PREFIX: "&c Camouflage &7▎"
+  NO_PERMS: "{prefix} &cNon puoi eseguire questo comando!"
+  NO_PLAYER: "{prefix} &cNon puoi eseguire questo comando da Player!"
+  NO_CONSOLE: "{prefix} &cNon puoi eseguire questo comando da Console!"
+  UNKNOWN_PLAYER: "{prefix} &cQuesto player non esiste!"
+
+camouflage:
+
+  usages:
+    CAMOUFLAGE:
+      - " "
+      - "&b/camouflage version &7» &fMostra la versione in uso."
+      - "&b/camouflage consumption &7» &fMostra l'utilizzo delle risorse."
+      - "&c/camouflage reload &7» &fRicarica la configurazione."
+      - " "
+
+  camo-command:
+    RELOAD: "{prefix} &oConfigurazione ricaricata."
+    #
+    # NON MODIFICARE!
+    #
+    VERSION:
+      - "&8&m-----------------------"
+      - "&8▎ &cv{ver} &7&o({hash})"
+      - "&8▎ &7autore: &c{authors}"
+      - "&8▎ &7sito: &c{site}"
+      - "&8&m-----------------------"
+    CONSUMPTION:
+      - "&8&m-----------------------"
+      - "&8▎ &7ray-engine: &c{average}ms"
+      - "&8&m-----------------------"
+
+  tracking-engine:
+
+    UPDATE_INTERVAL: 50
+
+    near-check:
+      RANGE: 64
+
+    raytracing-check:
+      ACCURACY: 0.25
